@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+
+}
+
+.container-fluid{
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5aa9ba;
+}
+
+.navbar-brand{
+    margin-left: 2em;
+}
+
+.nav-item{
+    margin-left: 15em;
+}
+
+.btn-outline-success{
+    margin-right:5em;
+    
+}
+
+.nav-link.active{
+    margin-right: 5em;
+}
+
+.navbar{
+    padding:0;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    
+    left: 0;
+    background-color: #ffffff; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
