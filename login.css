@@ -1,0 +1,34 @@
+body{
+    background-color: darkblue;
+
+}
+img{
+    width: 300px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5em;
+}
+.textt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 3.5em;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 0;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 250px;
+    background-color: rgb(234,38,96)
+}
