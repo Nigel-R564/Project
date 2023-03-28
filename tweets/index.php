@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,13 +15,9 @@
         <input type="submit" name="submit" value="Login">
     </form>
 
-    <div id="naam"
-    <h1>My account</h1>
 
 </div>
 </body>
-</html>
-
 <style>
 
     body {
@@ -75,9 +70,9 @@
 
 </html>
 
-
-
 <?php
+
+
 
 include_once "realDBConnect.php";
 global $conn;
@@ -87,6 +82,4 @@ if(isset($_POST["username"], $_POST["password"])) {
         "name" => $_POST["username"],
         "pass" => $_POST["password"]
     ]);
-
 }
-
