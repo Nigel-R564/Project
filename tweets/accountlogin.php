@@ -71,15 +71,24 @@
 </html>
 
 <?php
-
+//session_start();
+//$_SESSION["user"] = "rayan";
 
 
 include_once "realDBConnect.php";
 global $conn;
 if(isset($_POST["username"], $_POST["password"])) {
-    $statement = $conn->prepare("INSERT INTO users(name,password) VALUES (:name,:pass);");
+    $statement = $conn->prepare("SELECT * FROM users WHERE name = :name, password = :pass;");
     $statement->execute([
         "name" => $_POST["username"],
         "pass" => $_POST["password"]
     ]);
+    if(count($statement->fetchAll(PDO::FETCH_ASSOC)) == 1){
+
+        session_start();
+        $_SESSION["user"] = $_POST["username"];
+    }
+    else{
+        //fout
+    }
 }
